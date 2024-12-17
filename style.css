@@ -1,0 +1,144 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; 
+    font-family: "Montserrat", sans-serif;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    min-height: 100vh; 
+    background-color: #676361; 
+    padding: 0;
+}
+
+
+#content {
+    text-align: center;
+    margin-top: 20px; 
+    padding: 0 20px; 
+}
+
+#content a {
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 10px; 
+    transition: color 0.3s ease;
+}
+
+#content a:hover {
+    color: #eaeaea; 
+}
+
+
+#paragraph1 {
+    font-size: 60px; 
+    font-weight: 700;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+    line-height: 1.2;
+}
+
+#paragraph2, #paragraph3, #paragraph4 {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto 20px;
+    color: #eaeaea;
+}
+
+
+#gaumont {
+    display: block;
+    margin: 40px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+
+#container {
+    display: flex;
+    justify-content: center; 
+    gap: 2rem;             
+    margin-top: 2rem;
+    align-items: flex-start; 
+}
+
+
+#big-box {
+    width: 300px;
+    height: 400px;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+}
+
+#big-box img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
+
+
+#small-boxes {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;    
+    gap: 2rem;              
+    width: 300px;           
+    height: 400px;           
+}
+
+
+.small-box {
+    display: flex;
+    justify-content: center;  
+    align-items: center;     
+    cursor: pointer;
+    width: 120px;            
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+}
+
+.small-box:hover {
+    background-color: #ddd;
+    transform: scale(1.1); 
+}
+
+
+@media (max-width: 768px) {
+    #container {
+        flex-direction: column;   
+        align-items: center;    
+    }
+
+    #big-box {
+        width: 80%; 
+        height: 300px;
+    }
+
+    .small-box {
+        width: 100px;           
+        height: 100px;
+    }
+
+    #paragraph1 {
+        font-size: 50px;         
+    }
+}
